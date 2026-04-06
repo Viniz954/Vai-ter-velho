@@ -5,12 +5,10 @@ Data de início: 29/03/2026
 Data de entrega: 17/04/2026
 
 Sala: 9°D
-Grupo: 
-- Miguel Eduardo (Batata)
+Grupo:
+- Miguel Eduardo
 - Raphael Brandão
-- Luan Barcelos (Sr. Gigante)
-- Bernardo (Teta)
-- Vinicius (Rola-Bosta)
+- Luan Barcelos
+- Bernardo
+- Vinicius
 - Sofia Moreno
-
-Ultima alteração: 31/03/2026
