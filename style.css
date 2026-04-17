@@ -102,4 +102,9 @@ figcaption {
     width: 100px;
     height: 100px;
   }
+.card-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
 }
