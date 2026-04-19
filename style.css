@@ -123,6 +123,15 @@ figcaption {
 .footer-links a:hover {
   color: #fff;
 }
+.card-extra {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.card.active .card-extra {
+  max-height: 200px; /* ajuste conforme o conteúdo */
+}
 @media (max-width: 600px) {
   .title {
     font-size: 24px;
