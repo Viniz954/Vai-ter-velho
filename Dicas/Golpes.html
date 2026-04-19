@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dicas</title>
+  <title>Golpes</title>
 
-  <link rel="shortcut icon" href="images/favicon.ico"/>
-  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://viniz954.github.io/Vai-ter-velho/images/favicon.ico"/>
+  <link rel="stylesheet" href=https://viniz954.github.io/Vai-ter-velho/style.css>
 </head>
 
 <body>
 <header>
   <div class="topnav"><!--Barra superior-->
-    <a href="#"><img src="images/favicon.ico" class="logo"></a>
+    <a href="#"><img src="https://viniz954.github.io/Vai-ter-velho/images/favicon.ico" class="logo"></a>
     <a href="index.html">Início</a>
     <a class="active" href="dicas.html">Dicas</a>
     <a href="config.html">Configurações</a>
@@ -25,45 +25,29 @@
           <p class="texto">
         Aprenda a utilizar a internet e as tecnologias de maneira segura.
           </p>
-      <a href="Dicas/Golpes.html" class="card-Link">
-      <div class="card">
-      <div class="card-header">
-        <h2>Golpes</h2>
-      </div>
-        <div class="card-content">
-        <figure>
-          <img src="images/Golpes.jpg" class="img-redonda">
-          <figcaption>No Brasil, estima-se que ocorram mais de 1,5 milhão de tentativas de golpes virtuais por dia. Aprenda a se previnir contra eles.</figcaption>
-        </figure>
-            </div>
-      </div>
-      </a>
-      <a href="Dicas/Tech.html" class="card-Link">
-      <div class="card">
-      <div class="card-header">
-        <h2>Tecnologias</h2>
-      </div>
-        <div class="card-content">
-        <figure>
-          <img src="images/Tecnologias.jpg" class="img-redonda">
-          <figcaption>No Brasil, estima-se que ocorram mais de 1,5 milhão de tentativas de golpes virtuais por dia. Aprenda a se previnir contra eles.</figcaption>
-        </figure>
-            </div>
-      </div>
-      </a>
-      <a href="Dicas/Net.html" class="card-Link">
-      <div class="card">
-      <div class="card-header">
-        <h2>Internet</h2>
-      </div>
-        <div class="card-content">
-        <figure>
-          <img src="images/Internet.jpg" class="img-redonda">
-          <figcaption>No Brasil, estima-se que ocorram mais de 1,5 milhão de tentativas de golpes virtuais por dia. Aprenda a se previnir contra eles.</figcaption>
-        </figure>
-            </div>
-      </div>
-      </a>
+<div class="card" onclick="toggleCard(this)">
+  <div class="card-header">
+    <h2>Golpes</h2>
+  </div>
+
+  <div class="card-content">
+    <figure>
+      <img src="images/Golpes.jpg" class="img-redonda">
+      <figcaption>Texto normal...</figcaption>
+    </figure>
+  </div>
+
+  <!-- CONTEÚDO EXTRA (inicialmente escondido) -->
+  <div class="card-extra">
+    <p>Aqui aparecem mais abas/contúdo quando clicar</p>
+    <div class="card-content">
+    <figure>
+      <img src="images/Golpes.jpg" class="img-redonda">
+      <figcaption>Texto normal...</figcaption>
+    </figure>
+  </div>
+  </div>
+</div>
         </section>
     </main>
   <footer>
@@ -79,5 +63,10 @@
     </div>
   </div>
 </footer>
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 </body>
     </html>
