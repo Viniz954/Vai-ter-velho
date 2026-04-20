@@ -67,6 +67,17 @@
 function toggleCard(card) {
   card.classList.toggle("active");
 }
+function toggleCard(card) {
+  const extra = card.querySelector(".card-extra");
+
+  if (card.classList.contains("active")) {
+    extra.style.maxHeight = null;
+    card.classList.remove("active");
+  } else {
+    extra.style.maxHeight = extra.scrollHeight + "px";
+    card.classList.add("active");
+  }
+}
 </script>
 </body>
     </html>
