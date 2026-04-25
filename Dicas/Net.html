@@ -1,1 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Internet</title>
+
+    <link rel="shortcut icon" href="https://viniz954.github.io/Vai-ter-velho/images/favicon.ico" />
+    <link rel="stylesheet" href="https://viniz954.github.io/Vai-ter-velho/CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="topnav"><!--Barra superior-->
+            <a><img src="https://viniz954.github.io/Vai-ter-velho/images/favicon.ico" class="logo"></a>
+            <a href="https://viniz954.github.io/Vai-ter-velho/">Início</a>
+            <a class="active" href="https://viniz954.github.io/Vai-ter-velho/dicas.html">Dicas</a>
+            <a href="https://viniz954.github.io/Vai-ter-velho/config.html">Configurações</a>
+            <a href="https://viniz954.github.io/Vai-ter-velho/info.html">Sobre</a>
+        </div>
+    </header>
+    <main>
+        <section id="Dicas">
+            <h1 class="title">Internet</h1>
+            <div class="card" onclick="toggleCard(this)">
+                <div class="card-header">
+                    <h2>Interneticionário</h2>
+                    <figure>
+                        <img src="https://viniz954.github.io/Vai-ter-velho/images/Dicionário.jpg" class="img-redonda">
+                        <figcaption>Aprenda algumas palavras, gírias, frases e termos comumente utilizadas na internet.</figcaption>
+                    </figure>
+                </div>
+
+
+                <!-- CONTEÚDO EXTRA (inicialmente escondido) -->
+                <div class="card-extra">
+                    <div class="card-content">
+                        <h3 class="card-header">SUMÁRIO</h3>
+                        <p>
+                            1-<a href="#Jogos">Jogos</a><br>
+                            2-<a href="#Conversas">Conversas</a><br>
+                        </p>
+                        <h3 class="card-header">COMO USAM</h3>
+                        <p>Com o avanço das IAs, golpistas usam deepfakes para se passar por pessoas como familiares, funcionários de banco ou até autoridades.
+                            Eles conseguem, por exemplo, imitar a voz de um filho pedindo dinheiro urgente ou criar vídeos falsos que parecem reais para enganar e gerar confiança.
+                            <br>Esses golpes são comuns até mesmo nas redes sociais, como o Tiktok, Instagram e Facebook
+                        </p>
+                        <h3 class="card-header" id="Jogos">COMO SE DEFENDER</h3>
+                        <ul>
+                            <li>Desconfie de pedidos urgentes de dinheiro.</li>
+                            <li>Sempre confirme as informações por outro meio.</li>
+                            <li>Evite compartilhar dados pessoais ou bancários.</li>
+                            <li>Fique atento a sinais estranhos em vídeos ou áudios.</li>
+                            <li>Peça ajuda a alguém de confiança.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 - Projeto Etarismo Digital - Vai ter velho</p>
+            <p>Desenvolvido pelo grupo Black Mesa</p>
+
+            <div class="footer-links">
+                <a href="https://viniz954.github.io/Vai-ter-velho/">Início</a>
+                <a href="https://viniz954.github.io/Vai-ter-velho/dicas.html">Dicas</a>
+                <a href="https://viniz954.github.io/Vai-ter-velho/config.html">Configurações</a>
+                <a href="https://viniz954.github.io/Vai-ter-velho/info.html">Sobre</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleCard(card) {
+            card.classList.toggle("active");
+        }
+
+        function toggleCard(card) {
+            const extra = card.querySelector(".card-extra");
+
+            if (card.classList.contains("active")) {
+                extra.style.maxHeight = null;
+                card.classList.remove("active");
+            } else {
+                extra.style.maxHeight = extra.scrollHeight + "px";
+                card.classList.add("active");
+            }
+        }
+    </script>
+</body>
+
+</html>
