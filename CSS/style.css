@@ -15,6 +15,7 @@ body {
   flex-wrap: wrap;
   background-color: #0465aa;
   padding: 10px 20px;
+  gap: 10px;
 }
 .card-Link {
   color: #333;
