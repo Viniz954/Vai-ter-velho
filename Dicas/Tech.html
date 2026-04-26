@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tecnologias</title>
+
+    <link rel="shortcut icon" href="https://viniz954.github.io/Vai-ter-velho/images/favicon.ico" />
+    <link rel="stylesheet" href="https://viniz954.github.io/Vai-ter-velho/CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <a><img src="https://viniz954.github.io/Vai-ter-velho/images/favicon.ico" class="logo"></a>
+            <a href="https://viniz954.github.io/Vai-ter-velho/">Início</a>
+            <a class="active" href="https://viniz954.github.io/Vai-ter-velho/dicas.html">Dicas</a>
+            <a href="https://viniz954.github.io/Vai-ter-velho/config.html">Configurações</a>
+            <a href="https://viniz954.github.io/Vai-ter-velho/info.html">Sobre</a>
+        </div>
+    </header>
+    <main>
+        <section id="Dicas">
+            <h1 class="title">Tecnologias</h1>
+            <div class="card" onclick="toggleCard(this)">
+                <div class="card-header">
+                    <h2>Inteligências Artificiais</h2>
+                    <figure>
+                        <img src="https://viniz954.github.io/Vai-ter-velho/images/IA.jpg" class="img-redonda">
+                        <figcaption>Como utilizar as IAs de maneira correta e simples</figcaption>
+                    </figure>
+                </div>
+
+
+                <div class="card-extra">
+                    <div class="card-content">
+                        <h3 class="card-header">Para que serve</h3>
+                        <p>As IAs podem te ajudar em muitas coisas, como responder suas perguntas, te ensinar algo simples como uma receita, ou até explicar assuntos que vc se interessa. É como ter alguém para te ajudar a qualquer hora.</p>
+                        <h3 class="card-header">Como utilizar</h3>
+                        <p>Para usar uma IA, por exemplo, o ChatGPT, basta escrever algo, como: "Como fazer arroz?","Me explique isso". Não precisa se preocupar em escrever perfeitamente, mas é necessário saber como perguntar de maneira coerente.
+                        </p>
+                        <h3 class="card-header">Tipos</h3>
+                        <p>Existem diversos tipos de inteligências artificiais, cada uma com propósitos e capacidades diferentes.<br>
+                            Alguns dos principais tipos são:</p>
+                        <ul>
+                            <li>IAs de texto.</li>
+                            <li>IAs que geram imagens.</li>
+                            <li>IAs que geram vídeos.</li>
+                            <li>IAs que geram músicas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 - Projeto Etarismo Digital - Vai ter velho</p>
+            <p>Desenvolvido pelo grupo Black Mesa</p>
+
+            <div class="footer-links">
+                <a href="https://viniz954.github.io/Vai-ter-velho/">Início</a>
+                <a href="https://viniz954.github.io/Vai-ter-velho/dicas.html">Dicas</a>
+                <a href="https://viniz954.github.io/Vai-ter-velho/config.html">Configurações</a>
+                <a href="https://viniz954.github.io/Vai-ter-velho/info.html">Sobre</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleCard(card) {
+            const extra = card.querySelector(".card-extra");
+
+            if (card.classList.contains("active")) {
+                extra.style.maxHeight = null;
+                card.classList.remove("active");
+            } else {
+                extra.style.maxHeight = extra.scrollHeight + "px";
+                card.classList.add("active");
+            }
+        }
+    </script>
+</body>
+
+</html>
