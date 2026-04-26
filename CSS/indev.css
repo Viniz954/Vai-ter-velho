@@ -32,7 +32,7 @@ body {
   color: #fdd835;
   padding: 10px 15px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 8px;
   transition: 0.3s;
 }
@@ -45,6 +45,7 @@ body {
 .topnav .active {
   background-color: #fdd835;
   color: #212121;
+  border-radius: 8px;
 }
 
 .logo {
